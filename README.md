@@ -19,7 +19,6 @@ The following ports may be published:
 - 8280
 - 8243
 - 9443
-- 9763
 
 You can create a container from this image running something like this:
 
