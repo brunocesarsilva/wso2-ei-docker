@@ -4,11 +4,11 @@
 # See the LICENSE file in the root directory or <http://www.gnu.org/licenses/lgpl-3.0.html>.
 
 FROM openjdk:alpine
-MAINTAINER Bruno Cesar <bruno@exablack.com>
+MAINTAINER Bruno Cesar <bruno@modoagil.com.br>
 
 WORKDIR /opt
 
-ARG EI_VERSION=6.0.0
+ARG EI_VERSION=6.1.0
 ARG PRODUCT_NAME=wso2ei
 ARG ZIP_URL=https://product-dist.wso2.com/products/enterprise-integrator/$EI_VERSION/$PRODUCT_NAME-$EI_VERSION.zip
 
@@ -24,6 +24,6 @@ ENV PATH $PATH:$CARBON_HOME/bin:$JAVA_HOME/bin
 
 WORKDIR /
 
-EXPOSE 8280 7077 9443 9763
+EXPOSE 8280 8243 9443
 
 ENTRYPOINT ["integrator.sh"]

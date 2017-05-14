@@ -9,7 +9,8 @@ WSO2 Enterprise Integrator Docker Image repository. You can see our public regis
 Supported tags and Dockerfile links
 ---
 
-- `latest`, `6.0.0` [(Dockerfile)](https://github.com/modoagil/wso2-integrator/blob/6.0.0/Dockerfile)
+- `latest`, `6.1.0` [(Dockerfile)](https://github.com/modoagil/wso2-integrator/blob/6.1.0/Dockerfile)
+- `6.0.0` [(Dockerfile)](https://github.com/modoagil/wso2-integrator/blob/6.0.0/Dockerfile)
 
 How to use?
 ---
@@ -23,7 +24,6 @@ The following ports may be published:
 You can create a container from this image running something like this:
 
 ```
-#!shell-session
 docker run -d -p 8280:8280 -p 8243:8243 -p 9443:9443 modoagil/wso2-integrator
 ```
 
