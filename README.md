@@ -9,7 +9,8 @@ WSO2 Enterprise Integrator Docker Image repository. You can see our public regis
 Supported tags and Dockerfile links
 ---
 
-- `latest`, `6.1.0` [(Dockerfile)](https://github.com/modoagil/wso2-integrator/blob/6.1.0/Dockerfile)
+- `latest`, `6.1.1` [(Dockerfile)](https://github.com/modoagil/wso2-integrator/blob/6.1.1/Dockerfile)
+- `6.1.0` [(Dockerfile)](https://github.com/modoagil/wso2-integrator/blob/6.1.0/Dockerfile)
 - `6.0.0` [(Dockerfile)](https://github.com/modoagil/wso2-integrator/blob/6.0.0/Dockerfile)
 
 How to use?

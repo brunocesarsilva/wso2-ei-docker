@@ -8,7 +8,7 @@ MAINTAINER Bruno Cesar <bruno@modoagil.com.br>
 
 WORKDIR /opt
 
-ARG EI_VERSION=6.1.0
+ARG EI_VERSION=6.1.1
 ARG PRODUCT_NAME=wso2ei
 ARG ZIP_URL=https://product-dist.wso2.com/products/enterprise-integrator/$EI_VERSION/$PRODUCT_NAME-$EI_VERSION.zip
 
