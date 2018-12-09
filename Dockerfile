@@ -3,12 +3,11 @@
 # License: GNU Lesser General Public License (LGPL), version 3 or later
 # See the LICENSE file in the root directory or <http://www.gnu.org/licenses/lgpl-3.0.html>.
 
-FROM openjdk:alpine
-MAINTAINER Bruno Cesar <bruno@modoagil.com.br>
+FROM alpine AS builder
 
 WORKDIR /opt
 
-ARG EI_VERSION=6.1.1
+ARG EI_VERSION=6.2.0
 ARG PRODUCT_NAME=wso2ei
 ARG ZIP_URL=https://product-dist.wso2.com/products/enterprise-integrator/$EI_VERSION/$PRODUCT_NAME-$EI_VERSION.zip
 
@@ -19,8 +18,14 @@ RUN apk add --update curl unzip; \
   rm -f $PRODUCT_NAME/bin/*.bat; \
   rm -f wso2*.zip
 
-ENV CARBON_HOME /opt/$PRODUCT_NAME
-ENV PATH $PATH:$CARBON_HOME/bin:$JAVA_HOME/bin
+FROM openjdk:8-jre-alpine
+LABEL maintainer="Bruno Cesar <bruno@modoagil.com.br>"
+
+COPY --from=builder /opt /opt
+
+ENV EI_HOME /opt/wso2ei
+ENV PATH $PATH:$EI_HOME/bin:$JAVA_HOME/bin
+ENV JAVA_OPTS "$JAVA_OPTS -XX:+UnlockExperimentalVMOptions -XX:+UseCGroupMemoryLimitForHeap"
 
 WORKDIR /
 

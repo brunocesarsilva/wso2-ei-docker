@@ -4,12 +4,13 @@ WSO2 Enterprise Integrator Docker Image
 
 WSO2 Enterprise Integrator Docker Image repository. You can see our public registries at [Modo Ágil Public Repositories](https://hub.docker.com/u/modoagil/)
 
-[`openjdk:alpine`](https://hub.docker.com/_/openjdk/) is the base image of this image.
+[`openjdk:8-jre-alpine`](https://hub.docker.com/_/openjdk/) is the base image of this image.
 
 Supported tags and Dockerfile links
 ---
 
-- `latest`, `6.1.1` [(Dockerfile)](https://github.com/modoagil/wso2-integrator/blob/6.1.1/Dockerfile)
+- `latest`, `6.2.0` [(Dockerfile)](https://github.com/modoagil/wso2-integrator/blob/6.2.0/Dockerfile)
+- `6.1.1` [(Dockerfile)](https://github.com/modoagil/wso2-integrator/blob/6.1.1/Dockerfile)
 - `6.1.0` [(Dockerfile)](https://github.com/modoagil/wso2-integrator/blob/6.1.0/Dockerfile)
 - `6.0.0` [(Dockerfile)](https://github.com/modoagil/wso2-integrator/blob/6.0.0/Dockerfile)
 
