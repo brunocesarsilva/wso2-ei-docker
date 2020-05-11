@@ -7,7 +7,7 @@ FROM alpine AS builder
 
 WORKDIR /opt
 
-ARG EI_VERSION=6.5.0
+ARG EI_VERSION=6.6.0
 ARG PRODUCT_NAME=wso2ei
 ARG ZIP_URL=https://product-dist.wso2.com/products/enterprise-integrator/$EI_VERSION/$PRODUCT_NAME-$EI_VERSION.zip
 
@@ -18,14 +18,14 @@ RUN apk add --update curl unzip; \
   rm -f $PRODUCT_NAME/bin/*.bat; \
   rm -f wso2*.zip
 
-FROM openjdk:8-jre-alpine
-LABEL maintainer="Bruno Cesar <bruno@modoagil.com.br>"
+FROM openjdk:11-jre
+LABEL maintainer="Bruno Silva <bruno@modoagil.com.br>"
 
 COPY --from=builder /opt /opt
 
 ENV EI_HOME /opt/wso2ei
 ENV PATH $PATH:$EI_HOME/bin:$JAVA_HOME/bin
-ENV JAVA_OPTS "$JAVA_OPTS -XX:+UnlockExperimentalVMOptions -XX:+UseCGroupMemoryLimitForHeap"
+ENV JAVA_OPTS "$JAVA_OPTS -XX:+UnlockExperimentalVMOptions -XX:+UseZGC"
 
 WORKDIR /
 
