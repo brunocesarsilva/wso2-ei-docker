@@ -2,14 +2,15 @@ WSO2 Enterprise Integrator Docker Image
 ==========
 [![License (LGPL version 3)](https://img.shields.io/badge/license-GNU%20LGPL%20version%203.0-green.svg?maxAge=2592000)](https://github.com/modoagil/wso2-integrator/blob/master/LICENSE)  [![](https://images.microbadger.com/badges/image/modoagil/wso2-integrator.svg)](https://microbadger.com/images/modoagil/wso2-integrator "Badge by microbadger.com")
 
-WSO2 Enterprise Integrator Docker Image repository. You can see our public registries at [Modo Ágil Public Repositories](https://hub.docker.com/u/modoagil/)
+WSO2 Enterprise Integrator Docker Image repository. You can see our public registry at [Modo Ágil Public Repositories](https://hub.docker.com/u/modoagil/)
 
 [`openjdk:8-jre-alpine`](https://hub.docker.com/_/openjdk/) is the base image of this image.
 
 Supported tags and Dockerfile links
 ---
 
-- `latest`, `6.4.0` [(Dockerfile)](https://github.com/modoagil/wso2-integrator/blob/6.4.0/Dockerfile)
+- `latest`, `6.5.0` [(Dockerfile)](https://github.com/modoagil/wso2-integrator/blob/6.5.0/Dockerfile)
+- `6.4.0` [(Dockerfile)](https://github.com/modoagil/wso2-integrator/blob/6.4.0/Dockerfile)
 - `6.3.0` [(Dockerfile)](https://github.com/modoagil/wso2-integrator/blob/6.3.0/Dockerfile)
 - `6.2.0` [(Dockerfile)](https://github.com/modoagil/wso2-integrator/blob/6.2.0/Dockerfile)
 - `6.1.1` [(Dockerfile)](https://github.com/modoagil/wso2-integrator/blob/6.1.1/Dockerfile)

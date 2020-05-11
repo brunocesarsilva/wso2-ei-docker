@@ -7,7 +7,7 @@ FROM alpine AS builder
 
 WORKDIR /opt
 
-ARG EI_VERSION=6.4.0
+ARG EI_VERSION=6.5.0
 ARG PRODUCT_NAME=wso2ei
 ARG ZIP_URL=https://product-dist.wso2.com/products/enterprise-integrator/$EI_VERSION/$PRODUCT_NAME-$EI_VERSION.zip
 
